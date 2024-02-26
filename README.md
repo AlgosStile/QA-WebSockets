@@ -1,1 +1,1 @@
-## Тестирование websocket на примере rest-assured + selenium-java + selenide
+## Тестирование websocket на примере rest-assured + selenide
