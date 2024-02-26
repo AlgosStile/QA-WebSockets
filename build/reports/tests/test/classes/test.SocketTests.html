@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - SocketTests</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>SocketTests</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/test.html">test</a> &gt; SocketTests</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">3</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">2</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">1m17.07s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox failures" id="successRate">
+<div class="percent">33%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Failed tests</a>
+</li>
+<li>
+<a href="#tab1">Tests</a>
+</li>
+<li>
+<a href="#tab2">Standard output</a>
+</li>
+<li>
+<a href="#tab3">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="socketUI_ReceiveText()"></a>
+<h3 class="failures">socketUI_ReceiveText()</h3>
+<span class="code">
+<pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 29.649
+  (Session info: chrome=122.0.6261.58)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1cdb1fd36cf5327f7825faf16d1cf299, get {url=https://www.piesocket.com/websocket-tester}]
+selenide.url: https://www.piesocket.com/websocket-tester
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 122.0.6261.58, chrome: {chromedriverVersion: 122.0.6261.69 (81bc525b6a36..., userDataDir: C:\Users\doct2\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:8355}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:8355/devtool..., se:cdpVersion: 122.0.6261.58, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+selenide.baseUrl: http://localhost:8080
+Session ID: 1cdb1fd36cf5327f7825faf16d1cf299
+	at java.base@17.0.10/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base@17.0.10/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base@17.0.10/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base@17.0.10/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base@17.0.10/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at app//org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at app//org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at app//org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at app//org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at app//org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at app//org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at app//org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at app//org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:301)
+	at app//org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:1064)
+	at app//com.codeborne.selenide.drivercommands.Navigator.lambda$navigateTo$0(Navigator.java:72)
+	at app//com.codeborne.selenide.logevents.SelenideLogger.lambda$run$0(SelenideLogger.java:105)
+	at app//com.codeborne.selenide.logevents.SelenideLogger.wrap(SelenideLogger.java:133)
+	at app//com.codeborne.selenide.logevents.SelenideLogger.run(SelenideLogger.java:104)
+	at app//com.codeborne.selenide.drivercommands.Navigator.navigateTo(Navigator.java:68)
+	at app//com.codeborne.selenide.drivercommands.Navigator.open(Navigator.java:31)
+	at app//com.codeborne.selenide.SelenideDriver.open(SelenideDriver.java:92)
+	at app//com.codeborne.selenide.Selenide.open(Selenide.java:53)
+	at app//test.SocketTests.socketUI_ReceiveText(SocketTests.java:136)
+	at java.base@17.0.10/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@17.0.10/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base@17.0.10/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@17.0.10/java.lang.reflect.Method.invoke(Method.java:568)
+	at app//org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
+	at app//org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at app//org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at app//org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at app//org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at app//org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at app//org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at app//org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at app//org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:218)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:214)
+	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:139)
+	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base@17.0.10/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base@17.0.10/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at app//org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at app//org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:108)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:96)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:75)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:99)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:79)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:75)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
+	at java.base@17.0.10/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@17.0.10/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base@17.0.10/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@17.0.10/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at jdk.proxy1/jdk.proxy1.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:133)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="socketUI_SendText()"></a>
+<h3 class="failures">socketUI_SendText()</h3>
+<span class="code">
+<pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 29.029
+  (Session info: chrome=122.0.6261.58)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1cdb1fd36cf5327f7825faf16d1cf299, get {url=https://www.piesocket.com/websocket-tester}]
+selenide.url: https://www.piesocket.com/websocket-tester
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 122.0.6261.58, chrome: {chromedriverVersion: 122.0.6261.69 (81bc525b6a36..., userDataDir: C:\Users\doct2\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:8355}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:8355/devtool..., se:cdpVersion: 122.0.6261.58, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+selenide.baseUrl: http://localhost:8080
+Session ID: 1cdb1fd36cf5327f7825faf16d1cf299
+	at java.base@17.0.10/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base@17.0.10/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base@17.0.10/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base@17.0.10/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base@17.0.10/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at app//org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at app//org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at app//org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at app//org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at app//org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at app//org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at app//org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at app//org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:301)
+	at app//org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:1064)
+	at app//com.codeborne.selenide.drivercommands.Navigator.lambda$navigateTo$0(Navigator.java:72)
+	at app//com.codeborne.selenide.logevents.SelenideLogger.lambda$run$0(SelenideLogger.java:105)
+	at app//com.codeborne.selenide.logevents.SelenideLogger.wrap(SelenideLogger.java:133)
+	at app//com.codeborne.selenide.logevents.SelenideLogger.run(SelenideLogger.java:104)
+	at app//com.codeborne.selenide.drivercommands.Navigator.navigateTo(Navigator.java:68)
+	at app//com.codeborne.selenide.drivercommands.Navigator.open(Navigator.java:31)
+	at app//com.codeborne.selenide.SelenideDriver.open(SelenideDriver.java:92)
+	at app//com.codeborne.selenide.Selenide.open(Selenide.java:53)
+	at app//test.SocketTests.socketUI_SendText(SocketTests.java:106)
+	at java.base@17.0.10/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@17.0.10/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base@17.0.10/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@17.0.10/java.lang.reflect.Method.invoke(Method.java:568)
+	at app//org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
+	at app//org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at app//org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at app//org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at app//org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at app//org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at app//org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at app//org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at app//org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:218)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:214)
+	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:139)
+	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base@17.0.10/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base@17.0.10/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at app//org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at app//org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:108)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:96)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:75)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:99)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:79)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:75)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
+	at java.base@17.0.10/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@17.0.10/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base@17.0.10/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@17.0.10/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at jdk.proxy1/jdk.proxy1.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:133)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">socketKucoin_DifferentMessageSequenceDataValues()</td>
+<td class="success">14.339s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="failures">socketUI_ReceiveText()</td>
+<td class="failures">30.029s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">socketUI_SendText()</td>
+<td class="failures">32.701s</td>
+<td class="failures">failed</td>
+</tr>
+</table>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>{
+    &quot;code&quot;: &quot;200000&quot;,
+    &quot;data&quot;: {
+        &quot;token&quot;: &quot;2neAiuYvAU61ZDXANAGAsiL4-iAExhsBXZxftpOeh_55i3Ysy2q2LEsEWU64mdzUOPusi34M_wGoSf7iNyEWJ54BiDFTNk7P3VIXlViu1q5oPhhPdAO71NiYB9J6i9GjsxUuhPw3BlrzazF6ghq4L8u6n0riMsyP11JJRGImR7g=.dOUno7ODhhdjE-_2CGW3Jg==&quot;,
+        &quot;instanceServers&quot;: [
+            {
+                &quot;endpoint&quot;: &quot;wss://ws-api-spot.kucoin.com/&quot;,
+                &quot;encrypt&quot;: true,
+                &quot;protocol&quot;: &quot;websocket&quot;,
+                &quot;pingInterval&quot;: 18000,
+                &quot;pingTimeout&quot;: 10000
+            }
+        ]
+    }
+}
+Opened Connection wss://ws-api-spot.kucoin.com/?token=2neAiuYvAU61ZDXANAGAsiL4-iAExhsBXZxftpOeh_55i3Ysy2q2LEsEWU64mdzUOPusi34M_wGoSf7iNyEWJ54BiDFTNk7P3VIXlViu1q5oPhhPdAO71NiYB9J6i9GjsxUuhPw3BlrzazF6ghq4L8u6n0riMsyP11JJRGImR7g=.dOUno7ODhhdjE-_2CGW3Jg==&amp;connectId=iqchsbw
+Received new message {&quot;id&quot;:&quot;iqchsbw&quot;,&quot;type&quot;:&quot;welcome&quot;}
+Received new message {&quot;id&quot;:&quot;796065749&quot;,&quot;type&quot;:&quot;ack&quot;}
+Received new message {&quot;topic&quot;:&quot;/market/ticker:BTC-USDT&quot;,&quot;type&quot;:&quot;message&quot;,&quot;data&quot;:{&quot;bestAsk&quot;:&quot;51538.2&quot;,&quot;bestAskSize&quot;:&quot;0.76204688&quot;,&quot;bestBid&quot;:&quot;51538.1&quot;,&quot;bestBidSize&quot;:&quot;0.93920128&quot;,&quot;price&quot;:&quot;51538.2&quot;,&quot;sequence&quot;:&quot;10921604530&quot;,&quot;size&quot;:&quot;0.00019387&quot;,&quot;time&quot;:1708924404307},&quot;subject&quot;:&quot;trade.ticker&quot;}
+Received new message {&quot;topic&quot;:&quot;/market/ticker:BTC-USDT&quot;,&quot;type&quot;:&quot;message&quot;,&quot;data&quot;:{&quot;bestAsk&quot;:&quot;51538.2&quot;,&quot;bestAskSize&quot;:&quot;0.76204688&quot;,&quot;bestBid&quot;:&quot;51538.1&quot;,&quot;bestBidSize&quot;:&quot;0.93920128&quot;,&quot;price&quot;:&quot;51538.2&quot;,&quot;sequence&quot;:&quot;10921604533&quot;,&quot;size&quot;:&quot;0.00019387&quot;,&quot;time&quot;:1708924404307},&quot;subject&quot;:&quot;trade.ticker&quot;}
+Received new message {&quot;topic&quot;:&quot;/market/ticker:BTC-USDT&quot;,&quot;type&quot;:&quot;message&quot;,&quot;data&quot;:{&quot;bestAsk&quot;:&quot;51538.2&quot;,&quot;bestAskSize&quot;:&quot;0.76204688&quot;,&quot;bestBid&quot;:&quot;51538.1&quot;,&quot;bestBidSize&quot;:&quot;0.93920128&quot;,&quot;price&quot;:&quot;51538.2&quot;,&quot;sequence&quot;:&quot;10921604535&quot;,&quot;size&quot;:&quot;0.00019387&quot;,&quot;time&quot;:1708924404307},&quot;subject&quot;:&quot;trade.ticker&quot;}
+Received new message {&quot;topic&quot;:&quot;/market/ticker:BTC-USDT&quot;,&quot;type&quot;:&quot;message&quot;,&quot;data&quot;:{&quot;bestAsk&quot;:&quot;51538.2&quot;,&quot;bestAskSize&quot;:&quot;0.76204688&quot;,&quot;bestBid&quot;:&quot;51538.1&quot;,&quot;bestBidSize&quot;:&quot;0.93920128&quot;,&quot;price&quot;:&quot;51538.2&quot;,&quot;sequence&quot;:&quot;10921604539&quot;,&quot;size&quot;:&quot;0.00019387&quot;,&quot;time&quot;:1708924404307},&quot;subject&quot;:&quot;trade.ticker&quot;}
+Received new message {&quot;topic&quot;:&quot;/market/ticker:BTC-USDT&quot;,&quot;type&quot;:&quot;message&quot;,&quot;data&quot;:{&quot;bestAsk&quot;:&quot;51538.2&quot;,&quot;bestAskSize&quot;:&quot;0.76204688&quot;,&quot;bestBid&quot;:&quot;51538.1&quot;,&quot;bestBidSize&quot;:&quot;0.93920128&quot;,&quot;price&quot;:&quot;51538.2&quot;,&quot;sequence&quot;:&quot;10921604541&quot;,&quot;size&quot;:&quot;0.00019387&quot;,&quot;time&quot;:1708924404307},&quot;subject&quot;:&quot;trade.ticker&quot;}
+Received new message {&quot;topic&quot;:&quot;/market/ticker:BTC-USDT&quot;,&quot;type&quot;:&quot;message&quot;,&quot;data&quot;:{&quot;bestAsk&quot;:&quot;51538.2&quot;,&quot;bestAskSize&quot;:&quot;0.76204688&quot;,&quot;bestBid&quot;:&quot;51538.1&quot;,&quot;bestBidSize&quot;:&quot;0.93920128&quot;,&quot;price&quot;:&quot;51538.2&quot;,&quot;sequence&quot;:&quot;10921604546&quot;,&quot;size&quot;:&quot;0.00019387&quot;,&quot;time&quot;:1708924404307},&quot;subject&quot;:&quot;trade.ticker&quot;}
+Received new message {&quot;topic&quot;:&quot;/market/ticker:BTC-USDT&quot;,&quot;type&quot;:&quot;message&quot;,&quot;data&quot;:{&quot;bestAsk&quot;:&quot;51538.2&quot;,&quot;bestAskSize&quot;:&quot;0.76204688&quot;,&quot;bestBid&quot;:&quot;51538.1&quot;,&quot;bestBidSize&quot;:&quot;0.93920128&quot;,&quot;price&quot;:&quot;51538.2&quot;,&quot;sequence&quot;:&quot;10921604554&quot;,&quot;size&quot;:&quot;0.00019387&quot;,&quot;time&quot;:1708924404307},&quot;subject&quot;:&quot;trade.ticker&quot;}
+Received new message {&quot;topic&quot;:&quot;/market/ticker:BTC-USDT&quot;,&quot;type&quot;:&quot;message&quot;,&quot;data&quot;:{&quot;bestAsk&quot;:&quot;51538.2&quot;,&quot;bestAskSize&quot;:&quot;0.76204688&quot;,&quot;bestBid&quot;:&quot;51538.1&quot;,&quot;bestBidSize&quot;:&quot;0.93920128&quot;,&quot;price&quot;:&quot;51538.2&quot;,&quot;sequence&quot;:&quot;10921604564&quot;,&quot;size&quot;:&quot;0.00019387&quot;,&quot;time&quot;:1708924404307},&quot;subject&quot;:&quot;trade.ticker&quot;}
+Received new message {&quot;topic&quot;:&quot;/market/ticker:BTC-USDT&quot;,&quot;type&quot;:&quot;message&quot;,&quot;data&quot;:{&quot;bestAsk&quot;:&quot;51538.2&quot;,&quot;bestAskSize&quot;:&quot;0.76204688&quot;,&quot;bestBid&quot;:&quot;51538.1&quot;,&quot;bestBidSize&quot;:&quot;0.93920128&quot;,&quot;price&quot;:&quot;51538.2&quot;,&quot;sequence&quot;:&quot;10921604566&quot;,&quot;size&quot;:&quot;0.00019387&quot;,&quot;time&quot;:1708924404307},&quot;subject&quot;:&quot;trade.ticker&quot;}
+Received new message {&quot;topic&quot;:&quot;/market/ticker:BTC-USDT&quot;,&quot;type&quot;:&quot;message&quot;,&quot;data&quot;:{&quot;bestAsk&quot;:&quot;51538.2&quot;,&quot;bestAskSize&quot;:&quot;0.76204688&quot;,&quot;bestBid&quot;:&quot;51538.1&quot;,&quot;bestBidSize&quot;:&quot;0.1138094&quot;,&quot;price&quot;:&quot;51538.2&quot;,&quot;sequence&quot;:&quot;10921604605&quot;,&quot;size&quot;:&quot;0.00019387&quot;,&quot;time&quot;:1708924404307},&quot;subject&quot;:&quot;trade.ticker&quot;}
+Received new message {&quot;topic&quot;:&quot;/market/ticker:BTC-USDT&quot;,&quot;type&quot;:&quot;message&quot;,&quot;data&quot;:{&quot;bestAsk&quot;:&quot;51538.2&quot;,&quot;bestAskSize&quot;:&quot;0.76204688&quot;,&quot;bestBid&quot;:&quot;51538.1&quot;,&quot;bestBidSize&quot;:&quot;0.2972742&quot;,&quot;price&quot;:&quot;51538.2&quot;,&quot;sequence&quot;:&quot;10921604614&quot;,&quot;size&quot;:&quot;0.00019387&quot;,&quot;time&quot;:1708924404307},&quot;subject&quot;:&quot;trade.ticker&quot;}
+Received new message {&quot;topic&quot;:&quot;/market/ticker:BTC-USDT&quot;,&quot;type&quot;:&quot;message&quot;,&quot;data&quot;:{&quot;bestAsk&quot;:&quot;51538.2&quot;,&quot;bestAskSize&quot;:&quot;0.76204688&quot;,&quot;bestBid&quot;:&quot;51538.1&quot;,&quot;bestBidSize&quot;:&quot;0.2972742&quot;,&quot;price&quot;:&quot;51538.2&quot;,&quot;sequence&quot;:&quot;10921604623&quot;,&quot;size&quot;:&quot;0.00019387&quot;,&quot;time&quot;:1708924404307},&quot;subject&quot;:&quot;trade.ticker&quot;}
+Received new message {&quot;topic&quot;:&quot;/market/ticker:BTC-USDT&quot;,&quot;type&quot;:&quot;message&quot;,&quot;data&quot;:{&quot;bestAsk&quot;:&quot;51538.2&quot;,&quot;bestAskSize&quot;:&quot;0.76204688&quot;,&quot;bestBid&quot;:&quot;51538.1&quot;,&quot;bestBidSize&quot;:&quot;0.2972742&quot;,&quot;price&quot;:&quot;51538.2&quot;,&quot;sequence&quot;:&quot;10921604633&quot;,&quot;size&quot;:&quot;0.00019387&quot;,&quot;time&quot;:1708924404307},&quot;subject&quot;:&quot;trade.ticker&quot;}
+Received new message {&quot;topic&quot;:&quot;/market/ticker:BTC-USDT&quot;,&quot;type&quot;:&quot;message&quot;,&quot;data&quot;:{&quot;bestAsk&quot;:&quot;51538.2&quot;,&quot;bestAskSize&quot;:&quot;0.76204688&quot;,&quot;bestBid&quot;:&quot;51538.1&quot;,&quot;bestBidSize&quot;:&quot;0.2972742&quot;,&quot;price&quot;:&quot;51538.2&quot;,&quot;sequence&quot;:&quot;10921604647&quot;,&quot;size&quot;:&quot;0.00019387&quot;,&quot;time&quot;:1708924404307},&quot;subject&quot;:&quot;trade.ticker&quot;}
+Received new message {&quot;topic&quot;:&quot;/market/ticker:BTC-USDT&quot;,&quot;type&quot;:&quot;message&quot;,&quot;data&quot;:{&quot;bestAsk&quot;:&quot;51538.2&quot;,&quot;bestAskSize&quot;:&quot;0.76204688&quot;,&quot;bestBid&quot;:&quot;51538.1&quot;,&quot;bestBidSize&quot;:&quot;0.2972742&quot;,&quot;price&quot;:&quot;51538.2&quot;,&quot;sequence&quot;:&quot;10921604665&quot;,&quot;size&quot;:&quot;0.00019387&quot;,&quot;time&quot;:1708924404307},&quot;subject&quot;:&quot;trade.ticker&quot;}
+Received new message {&quot;topic&quot;:&quot;/market/ticker:BTC-USDT&quot;,&quot;type&quot;:&quot;message&quot;,&quot;data&quot;:{&quot;bestAsk&quot;:&quot;51538.2&quot;,&quot;bestAskSize&quot;:&quot;0.76204688&quot;,&quot;bestBid&quot;:&quot;51538.1&quot;,&quot;bestBidSize&quot;:&quot;0.2972742&quot;,&quot;price&quot;:&quot;51538.2&quot;,&quot;sequence&quot;:&quot;10921604673&quot;,&quot;size&quot;:&quot;0.00019387&quot;,&quot;time&quot;:1708924404307},&quot;subject&quot;:&quot;trade.ticker&quot;}
+Received new message {&quot;topic&quot;:&quot;/market/ticker:BTC-USDT&quot;,&quot;type&quot;:&quot;message&quot;,&quot;data&quot;:{&quot;bestAsk&quot;:&quot;51538.2&quot;,&quot;bestAskSize&quot;:&quot;0.76204688&quot;,&quot;bestBid&quot;:&quot;51538.1&quot;,&quot;bestBidSize&quot;:&quot;0.2972742&quot;,&quot;price&quot;:&quot;51538.2&quot;,&quot;sequence&quot;:&quot;10921604677&quot;,&quot;size&quot;:&quot;0.00019387&quot;,&quot;time&quot;:1708924404307},&quot;subject&quot;:&quot;trade.ticker&quot;}
+Received new message {&quot;topic&quot;:&quot;/market/ticker:BTC-USDT&quot;,&quot;type&quot;:&quot;message&quot;,&quot;data&quot;:{&quot;bestAsk&quot;:&quot;51538.2&quot;,&quot;bestAskSize&quot;:&quot;0.76204688&quot;,&quot;bestBid&quot;:&quot;51538.1&quot;,&quot;bestBidSize&quot;:&quot;0.2972742&quot;,&quot;price&quot;:&quot;51538.2&quot;,&quot;sequence&quot;:&quot;10921604682&quot;,&quot;size&quot;:&quot;0.00019387&quot;,&quot;time&quot;:1708924404307},&quot;subject&quot;:&quot;trade.ticker&quot;}
+Received new message {&quot;topic&quot;:&quot;/market/ticker:BTC-USDT&quot;,&quot;type&quot;:&quot;message&quot;,&quot;data&quot;:{&quot;bestAsk&quot;:&quot;51538.2&quot;,&quot;bestAskSize&quot;:&quot;0.76204688&quot;,&quot;bestBid&quot;:&quot;51538.1&quot;,&quot;bestBidSize&quot;:&quot;0.2972742&quot;,&quot;price&quot;:&quot;51538.2&quot;,&quot;sequence&quot;:&quot;10921604688&quot;,&quot;size&quot;:&quot;0.00019387&quot;,&quot;time&quot;:1708924404307},&quot;subject&quot;:&quot;trade.ticker&quot;}
+Received new message {&quot;topic&quot;:&quot;/market/ticker:BTC-USDT&quot;,&quot;type&quot;:&quot;message&quot;,&quot;data&quot;:{&quot;bestAsk&quot;:&quot;51538.2&quot;,&quot;bestAskSize&quot;:&quot;0.76204688&quot;,&quot;bestBid&quot;:&quot;51538.1&quot;,&quot;bestBidSize&quot;:&quot;0.2972742&quot;,&quot;price&quot;:&quot;51538.2&quot;,&quot;sequence&quot;:&quot;10921604696&quot;,&quot;size&quot;:&quot;0.00019387&quot;,&quot;time&quot;:1708924404307},&quot;subject&quot;:&quot;trade.ticker&quot;}
+Received new message {&quot;topic&quot;:&quot;/market/ticker:BTC-USDT&quot;,&quot;type&quot;:&quot;message&quot;,&quot;data&quot;:{&quot;bestAsk&quot;:&quot;51538.2&quot;,&quot;bestAskSize&quot;:&quot;0.76204688&quot;,&quot;bestBid&quot;:&quot;51538.1&quot;,&quot;bestBidSize&quot;:&quot;0.2972742&quot;,&quot;price&quot;:&quot;51538.2&quot;,&quot;sequence&quot;:&quot;10921604704&quot;,&quot;size&quot;:&quot;0.00019387&quot;,&quot;time&quot;:1708924404307},&quot;subject&quot;:&quot;trade.ticker&quot;}
+Received new message {&quot;topic&quot;:&quot;/market/ticker:BTC-USDT&quot;,&quot;type&quot;:&quot;message&quot;,&quot;data&quot;:{&quot;bestAsk&quot;:&quot;51538.2&quot;,&quot;bestAskSize&quot;:&quot;0.76204688&quot;,&quot;bestBid&quot;:&quot;51538.1&quot;,&quot;bestBidSize&quot;:&quot;0.7472742&quot;,&quot;price&quot;:&quot;51538.2&quot;,&quot;sequence&quot;:&quot;10921604705&quot;,&quot;size&quot;:&quot;0.00019387&quot;,&quot;time&quot;:1708924404307},&quot;subject&quot;:&quot;trade.ticker&quot;}
+Received new message {&quot;topic&quot;:&quot;/market/ticker:BTC-USDT&quot;,&quot;type&quot;:&quot;message&quot;,&quot;data&quot;:{&quot;bestAsk&quot;:&quot;51538.2&quot;,&quot;bestAskSize&quot;:&quot;0.76204688&quot;,&quot;bestBid&quot;:&quot;51538.1&quot;,&quot;bestBidSize&quot;:&quot;0.7472742&quot;,&quot;price&quot;:&quot;51538.2&quot;,&quot;sequence&quot;:&quot;10921604712&quot;,&quot;size&quot;:&quot;0.00019387&quot;,&quot;time&quot;:1708924404307},&quot;subject&quot;:&quot;trade.ticker&quot;}
+Received new message {&quot;topic&quot;:&quot;/market/ticker:BTC-USDT&quot;,&quot;type&quot;:&quot;message&quot;,&quot;data&quot;:{&quot;bestAsk&quot;:&quot;51538.2&quot;,&quot;bestAskSize&quot;:&quot;0.76204688&quot;,&quot;bestBid&quot;:&quot;51538.1&quot;,&quot;bestBidSize&quot;:&quot;0.7472742&quot;,&quot;price&quot;:&quot;51538.2&quot;,&quot;sequence&quot;:&quot;10921604720&quot;,&quot;size&quot;:&quot;0.00019387&quot;,&quot;time&quot;:1708924404307},&quot;subject&quot;:&quot;trade.ticker&quot;}
+Received new message {&quot;topic&quot;:&quot;/market/ticker:BTC-USDT&quot;,&quot;type&quot;:&quot;message&quot;,&quot;data&quot;:{&quot;bestAsk&quot;:&quot;51538.2&quot;,&quot;bestAskSize&quot;:&quot;0.76204688&quot;,&quot;bestBid&quot;:&quot;51538.1&quot;,&quot;bestBidSize&quot;:&quot;0.7472742&quot;,&quot;price&quot;:&quot;51538.2&quot;,&quot;sequence&quot;:&quot;10921604725&quot;,&quot;size&quot;:&quot;0.00019387&quot;,&quot;time&quot;:1708924404307},&quot;subject&quot;:&quot;trade.ticker&quot;}
+Received new message {&quot;topic&quot;:&quot;/market/ticker:BTC-USDT&quot;,&quot;type&quot;:&quot;message&quot;,&quot;data&quot;:{&quot;bestAsk&quot;:&quot;51538.2&quot;,&quot;bestAskSize&quot;:&quot;0.76204688&quot;,&quot;bestBid&quot;:&quot;51538.1&quot;,&quot;bestBidSize&quot;:&quot;0.7472742&quot;,&quot;price&quot;:&quot;51538.2&quot;,&quot;sequence&quot;:&quot;10921604730&quot;,&quot;size&quot;:&quot;0.00019387&quot;,&quot;time&quot;:1708924404307},&quot;subject&quot;:&quot;trade.ticker&quot;}
+Received new message {&quot;topic&quot;:&quot;/market/ticker:BTC-USDT&quot;,&quot;type&quot;:&quot;message&quot;,&quot;data&quot;:{&quot;bestAsk&quot;:&quot;51538.2&quot;,&quot;bestAskSize&quot;:&quot;0.76204688&quot;,&quot;bestBid&quot;:&quot;51538.1&quot;,&quot;bestBidSize&quot;:&quot;0.7472742&quot;,&quot;price&quot;:&quot;51538.2&quot;,&quot;sequence&quot;:&quot;10921604734&quot;,&quot;size&quot;:&quot;0.00019387&quot;,&quot;time&quot;:1708924404307},&quot;subject&quot;:&quot;trade.ticker&quot;}
+Received new message {&quot;topic&quot;:&quot;/market/ticker:BTC-USDT&quot;,&quot;type&quot;:&quot;message&quot;,&quot;data&quot;:{&quot;bestAsk&quot;:&quot;51538.2&quot;,&quot;bestAskSize&quot;:&quot;0.76204688&quot;,&quot;bestBid&quot;:&quot;51538.1&quot;,&quot;bestBidSize&quot;:&quot;0.7472742&quot;,&quot;price&quot;:&quot;51538.2&quot;,&quot;sequence&quot;:&quot;10921604738&quot;,&quot;size&quot;:&quot;0.00019387&quot;,&quot;time&quot;:1708924404307},&quot;subject&quot;:&quot;trade.ticker&quot;}
+Received new message {&quot;topic&quot;:&quot;/market/ticker:BTC-USDT&quot;,&quot;type&quot;:&quot;message&quot;,&quot;data&quot;:{&quot;bestAsk&quot;:&quot;51538.2&quot;,&quot;bestAskSize&quot;:&quot;0.76204688&quot;,&quot;bestBid&quot;:&quot;51538.1&quot;,&quot;bestBidSize&quot;:&quot;0.74411524&quot;,&quot;price&quot;:&quot;51538.2&quot;,&quot;sequence&quot;:&quot;10921604739&quot;,&quot;size&quot;:&quot;0.00019387&quot;,&quot;time&quot;:1708924404307},&quot;subject&quot;:&quot;trade.ticker&quot;}
+Received new message {&quot;topic&quot;:&quot;/market/ticker:BTC-USDT&quot;,&quot;type&quot;:&quot;message&quot;,&quot;data&quot;:{&quot;bestAsk&quot;:&quot;51538.2&quot;,&quot;bestAskSize&quot;:&quot;0.76204688&quot;,&quot;bestBid&quot;:&quot;51538.1&quot;,&quot;bestBidSize&quot;:&quot;0.74411524&quot;,&quot;price&quot;:&quot;51538.1&quot;,&quot;sequence&quot;:&quot;10921604743&quot;,&quot;size&quot;:&quot;0.00315896&quot;,&quot;time&quot;:1708924415135},&quot;subject&quot;:&quot;trade.ticker&quot;}
+Received new message {&quot;topic&quot;:&quot;/market/ticker:BTC-USDT&quot;,&quot;type&quot;:&quot;message&quot;,&quot;data&quot;:{&quot;bestAsk&quot;:&quot;51538.2&quot;,&quot;bestAskSize&quot;:&quot;0.76204688&quot;,&quot;bestBid&quot;:&quot;51538.1&quot;,&quot;bestBidSize&quot;:&quot;0.74411524&quot;,&quot;price&quot;:&quot;51538.1&quot;,&quot;sequence&quot;:&quot;10921604746&quot;,&quot;size&quot;:&quot;0.00315896&quot;,&quot;time&quot;:1708924415135},&quot;subject&quot;:&quot;trade.ticker&quot;}
+Received new message {&quot;topic&quot;:&quot;/market/ticker:BTC-USDT&quot;,&quot;type&quot;:&quot;message&quot;,&quot;data&quot;:{&quot;bestAsk&quot;:&quot;51538.2&quot;,&quot;bestAskSize&quot;:&quot;0.76204688&quot;,&quot;bestBid&quot;:&quot;51538.1&quot;,&quot;bestBidSize&quot;:&quot;0.74411524&quot;,&quot;price&quot;:&quot;51538.1&quot;,&quot;sequence&quot;:&quot;10921604747&quot;,&quot;size&quot;:&quot;0.00315896&quot;,&quot;time&quot;:1708924415135},&quot;subject&quot;:&quot;trade.ticker&quot;}
+Received new message {&quot;topic&quot;:&quot;/market/ticker:BTC-USDT&quot;,&quot;type&quot;:&quot;message&quot;,&quot;data&quot;:{&quot;bestAsk&quot;:&quot;51538.2&quot;,&quot;bestAskSize&quot;:&quot;0.76204688&quot;,&quot;bestBid&quot;:&quot;51538.1&quot;,&quot;bestBidSize&quot;:&quot;0.74411524&quot;,&quot;price&quot;:&quot;51538.1&quot;,&quot;sequence&quot;:&quot;10921604748&quot;,&quot;size&quot;:&quot;0.00315896&quot;,&quot;time&quot;:1708924415135},&quot;subject&quot;:&quot;trade.ticker&quot;}
+Received new message {&quot;topic&quot;:&quot;/market/ticker:BTC-USDT&quot;,&quot;type&quot;:&quot;message&quot;,&quot;data&quot;:{&quot;bestAsk&quot;:&quot;51538.2&quot;,&quot;bestAskSize&quot;:&quot;0.76204688&quot;,&quot;bestBid&quot;:&quot;51538.1&quot;,&quot;bestBidSize&quot;:&quot;0.74411524&quot;,&quot;price&quot;:&quot;51538.1&quot;,&quot;sequence&quot;:&quot;10921604749&quot;,&quot;size&quot;:&quot;0.00315896&quot;,&quot;time&quot;:1708924415135},&quot;subject&quot;:&quot;trade.ticker&quot;}
+Received new message {&quot;topic&quot;:&quot;/market/ticker:BTC-USDT&quot;,&quot;type&quot;:&quot;message&quot;,&quot;data&quot;:{&quot;bestAsk&quot;:&quot;51538.2&quot;,&quot;bestAskSize&quot;:&quot;0.76204688&quot;,&quot;bestBid&quot;:&quot;51538.1&quot;,&quot;bestBidSize&quot;:&quot;0.74411524&quot;,&quot;price&quot;:&quot;51538.1&quot;,&quot;sequence&quot;:&quot;10921604751&quot;,&quot;size&quot;:&quot;0.00315896&quot;,&quot;time&quot;:1708924415135},&quot;subject&quot;:&quot;trade.ticker&quot;}
+Received new message {&quot;topic&quot;:&quot;/market/ticker:BTC-USDT&quot;,&quot;type&quot;:&quot;message&quot;,&quot;data&quot;:{&quot;bestAsk&quot;:&quot;51538.2&quot;,&quot;bestAskSize&quot;:&quot;0.76204688&quot;,&quot;bestBid&quot;:&quot;51538.1&quot;,&quot;bestBidSize&quot;:&quot;0.74411524&quot;,&quot;price&quot;:&quot;51538.1&quot;,&quot;sequence&quot;:&quot;10921604759&quot;,&quot;size&quot;:&quot;0.00315896&quot;,&quot;time&quot;:1708924415135},&quot;subject&quot;:&quot;trade.ticker&quot;}
+Received new message {&quot;topic&quot;:&quot;/market/ticker:BTC-USDT&quot;,&quot;type&quot;:&quot;message&quot;,&quot;data&quot;:{&quot;bestAsk&quot;:&quot;51538.2&quot;,&quot;bestAskSize&quot;:&quot;0.76204688&quot;,&quot;bestBid&quot;:&quot;51538.1&quot;,&quot;bestBidSize&quot;:&quot;0.74411524&quot;,&quot;price&quot;:&quot;51538.1&quot;,&quot;sequence&quot;:&quot;10921604775&quot;,&quot;size&quot;:&quot;0.00315896&quot;,&quot;time&quot;:1708924415135},&quot;subject&quot;:&quot;trade.ticker&quot;}
+Received new message {&quot;topic&quot;:&quot;/market/ticker:BTC-USDT&quot;,&quot;type&quot;:&quot;message&quot;,&quot;data&quot;:{&quot;bestAsk&quot;:&quot;51538.2&quot;,&quot;bestAskSize&quot;:&quot;0.76204688&quot;,&quot;bestBid&quot;:&quot;51538.1&quot;,&quot;bestBidSize&quot;:&quot;0.74411524&quot;,&quot;price&quot;:&quot;51538.1&quot;,&quot;sequence&quot;:&quot;10921604779&quot;,&quot;size&quot;:&quot;0.00315896&quot;,&quot;time&quot;:1708924415135},&quot;subject&quot;:&quot;trade.ticker&quot;}
+Received new message {&quot;topic&quot;:&quot;/market/ticker:BTC-USDT&quot;,&quot;type&quot;:&quot;message&quot;,&quot;data&quot;:{&quot;bestAsk&quot;:&quot;51538.2&quot;,&quot;bestAskSize&quot;:&quot;0.76204688&quot;,&quot;bestBid&quot;:&quot;51538.1&quot;,&quot;bestBidSize&quot;:&quot;0.74411524&quot;,&quot;price&quot;:&quot;51538.1&quot;,&quot;sequence&quot;:&quot;10921604787&quot;,&quot;size&quot;:&quot;0.00315896&quot;,&quot;time&quot;:1708924415135},&quot;subject&quot;:&quot;trade.ticker&quot;}
+Received new message {&quot;topic&quot;:&quot;/market/ticker:BTC-USDT&quot;,&quot;type&quot;:&quot;message&quot;,&quot;data&quot;:{&quot;bestAsk&quot;:&quot;51538.2&quot;,&quot;bestAskSize&quot;:&quot;0.76204688&quot;,&quot;bestBid&quot;:&quot;51538.1&quot;,&quot;bestBidSize&quot;:&quot;0.74411524&quot;,&quot;price&quot;:&quot;51538.1&quot;,&quot;sequence&quot;:&quot;10921604800&quot;,&quot;size&quot;:&quot;0.00315896&quot;,&quot;time&quot;:1708924415135},&quot;subject&quot;:&quot;trade.ticker&quot;}
+Received new message {&quot;topic&quot;:&quot;/market/ticker:BTC-USDT&quot;,&quot;type&quot;:&quot;message&quot;,&quot;data&quot;:{&quot;bestAsk&quot;:&quot;51538.2&quot;,&quot;bestAskSize&quot;:&quot;0.76204688&quot;,&quot;bestBid&quot;:&quot;51538.1&quot;,&quot;bestBidSize&quot;:&quot;0.74411524&quot;,&quot;price&quot;:&quot;51538.1&quot;,&quot;sequence&quot;:&quot;10921604808&quot;,&quot;size&quot;:&quot;0.00315896&quot;,&quot;time&quot;:1708924415135},&quot;subject&quot;:&quot;trade.ticker&quot;}
+Received new message {&quot;topic&quot;:&quot;/market/ticker:BTC-USDT&quot;,&quot;type&quot;:&quot;message&quot;,&quot;data&quot;:{&quot;bestAsk&quot;:&quot;51538.2&quot;,&quot;bestAskSize&quot;:&quot;0.76204688&quot;,&quot;bestBid&quot;:&quot;51538.1&quot;,&quot;bestBidSize&quot;:&quot;0.74411524&quot;,&quot;price&quot;:&quot;51538.1&quot;,&quot;sequence&quot;:&quot;10921604810&quot;,&quot;size&quot;:&quot;0.00315896&quot;,&quot;time&quot;:1708924415135},&quot;subject&quot;:&quot;trade.ticker&quot;}
+Received new message {&quot;topic&quot;:&quot;/market/ticker:BTC-USDT&quot;,&quot;type&quot;:&quot;message&quot;,&quot;data&quot;:{&quot;bestAsk&quot;:&quot;51538.2&quot;,&quot;bestAskSize&quot;:&quot;0.76204688&quot;,&quot;bestBid&quot;:&quot;51538.1&quot;,&quot;bestBidSize&quot;:&quot;0.8779692&quot;,&quot;price&quot;:&quot;51538.1&quot;,&quot;sequence&quot;:&quot;10921604819&quot;,&quot;size&quot;:&quot;0.00315896&quot;,&quot;time&quot;:1708924415135},&quot;subject&quot;:&quot;trade.ticker&quot;}
+Received new message {&quot;topic&quot;:&quot;/market/ticker:BTC-USDT&quot;,&quot;type&quot;:&quot;message&quot;,&quot;data&quot;:{&quot;bestAsk&quot;:&quot;51538.2&quot;,&quot;bestAskSize&quot;:&quot;0.76204688&quot;,&quot;bestBid&quot;:&quot;51538.1&quot;,&quot;bestBidSize&quot;:&quot;0.8779692&quot;,&quot;price&quot;:&quot;51538.1&quot;,&quot;sequence&quot;:&quot;10921604828&quot;,&quot;size&quot;:&quot;0.00169029&quot;,&quot;time&quot;:1708924416951},&quot;subject&quot;:&quot;trade.ticker&quot;}
+Received new message {&quot;topic&quot;:&quot;/market/ticker:BTC-USDT&quot;,&quot;type&quot;:&quot;message&quot;,&quot;data&quot;:{&quot;bestAsk&quot;:&quot;51538.2&quot;,&quot;bestAskSize&quot;:&quot;0.76204688&quot;,&quot;bestBid&quot;:&quot;51538.1&quot;,&quot;bestBidSize&quot;:&quot;0.8779692&quot;,&quot;price&quot;:&quot;51538.1&quot;,&quot;sequence&quot;:&quot;10921604836&quot;,&quot;size&quot;:&quot;0.00169029&quot;,&quot;time&quot;:1708924416951},&quot;subject&quot;:&quot;trade.ticker&quot;}
+Received new message {&quot;topic&quot;:&quot;/market/ticker:BTC-USDT&quot;,&quot;type&quot;:&quot;message&quot;,&quot;data&quot;:{&quot;bestAsk&quot;:&quot;51538.2&quot;,&quot;bestAskSize&quot;:&quot;0.76204688&quot;,&quot;bestBid&quot;:&quot;51538.1&quot;,&quot;bestBidSize&quot;:&quot;0.8779692&quot;,&quot;price&quot;:&quot;51538.1&quot;,&quot;sequence&quot;:&quot;10921604846&quot;,&quot;size&quot;:&quot;0.00169029&quot;,&quot;time&quot;:1708924416951},&quot;subject&quot;:&quot;trade.ticker&quot;}
+Received new message {&quot;topic&quot;:&quot;/market/ticker:BTC-USDT&quot;,&quot;type&quot;:&quot;message&quot;,&quot;data&quot;:{&quot;bestAsk&quot;:&quot;51538.2&quot;,&quot;bestAskSize&quot;:&quot;0.76204688&quot;,&quot;bestBid&quot;:&quot;51538.1&quot;,&quot;bestBidSize&quot;:&quot;0.8779692&quot;,&quot;price&quot;:&quot;51538.1&quot;,&quot;sequence&quot;:&quot;10921604850&quot;,&quot;size&quot;:&quot;0.00169029&quot;,&quot;time&quot;:1708924416951},&quot;subject&quot;:&quot;trade.ticker&quot;}
+Received new message {&quot;topic&quot;:&quot;/market/ticker:BTC-USDT&quot;,&quot;type&quot;:&quot;message&quot;,&quot;data&quot;:{&quot;bestAsk&quot;:&quot;51538.2&quot;,&quot;bestAskSize&quot;:&quot;0.76204688&quot;,&quot;bestBid&quot;:&quot;51538.1&quot;,&quot;bestBidSize&quot;:&quot;0.8779692&quot;,&quot;price&quot;:&quot;51538.1&quot;,&quot;sequence&quot;:&quot;10921604861&quot;,&quot;size&quot;:&quot;0.00169029&quot;,&quot;time&quot;:1708924416951},&quot;subject&quot;:&quot;trade.ticker&quot;}
+Received new message {&quot;topic&quot;:&quot;/market/ticker:BTC-USDT&quot;,&quot;type&quot;:&quot;message&quot;,&quot;data&quot;:{&quot;bestAsk&quot;:&quot;51538.2&quot;,&quot;bestAskSize&quot;:&quot;0.76204688&quot;,&quot;bestBid&quot;:&quot;51538.1&quot;,&quot;bestBidSize&quot;:&quot;0.8779692&quot;,&quot;price&quot;:&quot;51538.1&quot;,&quot;sequence&quot;:&quot;10921604865&quot;,&quot;size&quot;:&quot;0.00169029&quot;,&quot;time&quot;:1708924416951},&quot;subject&quot;:&quot;trade.ticker&quot;}
+Received new message {&quot;topic&quot;:&quot;/market/ticker:BTC-USDT&quot;,&quot;type&quot;:&quot;message&quot;,&quot;data&quot;:{&quot;bestAsk&quot;:&quot;51538.2&quot;,&quot;bestAskSize&quot;:&quot;0.76204688&quot;,&quot;bestBid&quot;:&quot;51538.1&quot;,&quot;bestBidSize&quot;:&quot;0.8779692&quot;,&quot;price&quot;:&quot;51538.1&quot;,&quot;sequence&quot;:&quot;10921604872&quot;,&quot;size&quot;:&quot;0.00169029&quot;,&quot;time&quot;:1708924416951},&quot;subject&quot;:&quot;trade.ticker&quot;}
+Received new message {&quot;topic&quot;:&quot;/market/ticker:BTC-USDT&quot;,&quot;type&quot;:&quot;message&quot;,&quot;data&quot;:{&quot;bestAsk&quot;:&quot;51538.2&quot;,&quot;bestAskSize&quot;:&quot;0.76204688&quot;,&quot;bestBid&quot;:&quot;51538.1&quot;,&quot;bestBidSize&quot;:&quot;0.8779692&quot;,&quot;price&quot;:&quot;51538.1&quot;,&quot;sequence&quot;:&quot;10921604874&quot;,&quot;size&quot;:&quot;0.00169029&quot;,&quot;time&quot;:1708924416951},&quot;subject&quot;:&quot;trade.ticker&quot;}
+Received new message {&quot;topic&quot;:&quot;/market/ticker:BTC-USDT&quot;,&quot;type&quot;:&quot;message&quot;,&quot;data&quot;:{&quot;bestAsk&quot;:&quot;51538.2&quot;,&quot;bestAskSize&quot;:&quot;0.76204688&quot;,&quot;bestBid&quot;:&quot;51538.1&quot;,&quot;bestBidSize&quot;:&quot;0.8779692&quot;,&quot;price&quot;:&quot;51538.1&quot;,&quot;sequence&quot;:&quot;10921604875&quot;,&quot;size&quot;:&quot;0.00169029&quot;,&quot;time&quot;:1708924416951},&quot;subject&quot;:&quot;trade.ticker&quot;}
+Received new message {&quot;topic&quot;:&quot;/market/ticker:BTC-USDT&quot;,&quot;type&quot;:&quot;message&quot;,&quot;data&quot;:{&quot;bestAsk&quot;:&quot;51538.2&quot;,&quot;bestAskSize&quot;:&quot;0.76204688&quot;,&quot;bestBid&quot;:&quot;51538.1&quot;,&quot;bestBidSize&quot;:&quot;0.8779692&quot;,&quot;price&quot;:&quot;51538.1&quot;,&quot;sequence&quot;:&quot;10921604877&quot;,&quot;size&quot;:&quot;0.00169029&quot;,&quot;time&quot;:1708924416951},&quot;subject&quot;:&quot;trade.ticker&quot;}
+Received new message {&quot;topic&quot;:&quot;/market/ticker:BTC-USDT&quot;,&quot;type&quot;:&quot;message&quot;,&quot;data&quot;:{&quot;bestAsk&quot;:&quot;51538.2&quot;,&quot;bestAskSize&quot;:&quot;0.76204688&quot;,&quot;bestBid&quot;:&quot;51538.1&quot;,&quot;bestBidSize&quot;:&quot;0.8779692&quot;,&quot;price&quot;:&quot;51538.1&quot;,&quot;sequence&quot;:&quot;10921604880&quot;,&quot;size&quot;:&quot;0.00169029&quot;,&quot;time&quot;:1708924416951},&quot;subject&quot;:&quot;trade.ticker&quot;}
+Received new message {&quot;topic&quot;:&quot;/market/ticker:BTC-USDT&quot;,&quot;type&quot;:&quot;message&quot;,&quot;data&quot;:{&quot;bestAsk&quot;:&quot;51538.2&quot;,&quot;bestAskSize&quot;:&quot;0.76204688&quot;,&quot;bestBid&quot;:&quot;51538.1&quot;,&quot;bestBidSize&quot;:&quot;0.74242495&quot;,&quot;price&quot;:&quot;51538.1&quot;,&quot;sequence&quot;:&quot;10921604887&quot;,&quot;size&quot;:&quot;0.00169029&quot;,&quot;time&quot;:1708924416951},&quot;subject&quot;:&quot;trade.ticker&quot;}
+Received new message {&quot;topic&quot;:&quot;/market/ticker:BTC-USDT&quot;,&quot;type&quot;:&quot;message&quot;,&quot;data&quot;:{&quot;bestAsk&quot;:&quot;51538.2&quot;,&quot;bestAskSize&quot;:&quot;0.76204688&quot;,&quot;bestBid&quot;:&quot;51538.1&quot;,&quot;bestBidSize&quot;:&quot;0.74242495&quot;,&quot;price&quot;:&quot;51538.1&quot;,&quot;sequence&quot;:&quot;10921604894&quot;,&quot;size&quot;:&quot;0.00169029&quot;,&quot;time&quot;:1708924416951},&quot;subject&quot;:&quot;trade.ticker&quot;}
+Received new message {&quot;topic&quot;:&quot;/market/ticker:BTC-USDT&quot;,&quot;type&quot;:&quot;message&quot;,&quot;data&quot;:{&quot;bestAsk&quot;:&quot;51538.2&quot;,&quot;bestAskSize&quot;:&quot;0.76204688&quot;,&quot;bestBid&quot;:&quot;51538.1&quot;,&quot;bestBidSize&quot;:&quot;0.74242495&quot;,&quot;price&quot;:&quot;51538.1&quot;,&quot;sequence&quot;:&quot;10921604902&quot;,&quot;size&quot;:&quot;0.00169029&quot;,&quot;time&quot;:1708924416951},&quot;subject&quot;:&quot;trade.ticker&quot;}
+Received new message {&quot;topic&quot;:&quot;/market/ticker:BTC-USDT&quot;,&quot;type&quot;:&quot;message&quot;,&quot;data&quot;:{&quot;bestAsk&quot;:&quot;51538.2&quot;,&quot;bestAskSize&quot;:&quot;0.76204688&quot;,&quot;bestBid&quot;:&quot;51538.1&quot;,&quot;bestBidSize&quot;:&quot;0.74242495&quot;,&quot;price&quot;:&quot;51538.1&quot;,&quot;sequence&quot;:&quot;10921604906&quot;,&quot;size&quot;:&quot;0.00169029&quot;,&quot;time&quot;:1708924416951},&quot;subject&quot;:&quot;trade.ticker&quot;}
+Received new message {&quot;topic&quot;:&quot;/market/ticker:BTC-USDT&quot;,&quot;type&quot;:&quot;message&quot;,&quot;data&quot;:{&quot;bestAsk&quot;:&quot;51538.2&quot;,&quot;bestAskSize&quot;:&quot;0.76204688&quot;,&quot;bestBid&quot;:&quot;51538.1&quot;,&quot;bestBidSize&quot;:&quot;0.74242495&quot;,&quot;price&quot;:&quot;51538.1&quot;,&quot;sequence&quot;:&quot;10921604912&quot;,&quot;size&quot;:&quot;0.00169029&quot;,&quot;time&quot;:1708924416951},&quot;subject&quot;:&quot;trade.ticker&quot;}
+Received new message {&quot;topic&quot;:&quot;/market/ticker:BTC-USDT&quot;,&quot;type&quot;:&quot;message&quot;,&quot;data&quot;:{&quot;bestAsk&quot;:&quot;51538.2&quot;,&quot;bestAskSize&quot;:&quot;0.76204688&quot;,&quot;bestBid&quot;:&quot;51538.1&quot;,&quot;bestBidSize&quot;:&quot;0.74242495&quot;,&quot;price&quot;:&quot;51538.1&quot;,&quot;sequence&quot;:&quot;10921604914&quot;,&quot;size&quot;:&quot;0.00169029&quot;,&quot;time&quot;:1708924416951},&quot;subject&quot;:&quot;trade.ticker&quot;}
+Received new message {&quot;topic&quot;:&quot;/market/ticker:BTC-USDT&quot;,&quot;type&quot;:&quot;message&quot;,&quot;data&quot;:{&quot;bestAsk&quot;:&quot;51538.2&quot;,&quot;bestAskSize&quot;:&quot;0.76204688&quot;,&quot;bestBid&quot;:&quot;51538.1&quot;,&quot;bestBidSize&quot;:&quot;0.74242495&quot;,&quot;price&quot;:&quot;51538.1&quot;,&quot;sequence&quot;:&quot;10921604919&quot;,&quot;size&quot;:&quot;0.00169029&quot;,&quot;time&quot;:1708924416951},&quot;subject&quot;:&quot;trade.ticker&quot;}
+Received new message {&quot;topic&quot;:&quot;/market/ticker:BTC-USDT&quot;,&quot;type&quot;:&quot;message&quot;,&quot;data&quot;:{&quot;bestAsk&quot;:&quot;51538.2&quot;,&quot;bestAskSize&quot;:&quot;0.76204688&quot;,&quot;bestBid&quot;:&quot;51538.1&quot;,&quot;bestBidSize&quot;:&quot;0.74242495&quot;,&quot;price&quot;:&quot;51538.1&quot;,&quot;sequence&quot;:&quot;10921604937&quot;,&quot;size&quot;:&quot;0.00169029&quot;,&quot;time&quot;:1708924416951},&quot;subject&quot;:&quot;trade.ticker&quot;}
+Received new message {&quot;topic&quot;:&quot;/market/ticker:BTC-USDT&quot;,&quot;type&quot;:&quot;message&quot;,&quot;data&quot;:{&quot;bestAsk&quot;:&quot;51538.2&quot;,&quot;bestAskSize&quot;:&quot;0.76204688&quot;,&quot;bestBid&quot;:&quot;51538.1&quot;,&quot;bestBidSize&quot;:&quot;0.74242495&quot;,&quot;price&quot;:&quot;51538.1&quot;,&quot;sequence&quot;:&quot;10921604954&quot;,&quot;size&quot;:&quot;0.00169029&quot;,&quot;time&quot;:1708924416951},&quot;subject&quot;:&quot;trade.ticker&quot;}
+Received new message {&quot;topic&quot;:&quot;/market/ticker:BTC-USDT&quot;,&quot;type&quot;:&quot;message&quot;,&quot;data&quot;:{&quot;bestAsk&quot;:&quot;51538.2&quot;,&quot;bestAskSize&quot;:&quot;0.76204688&quot;,&quot;bestBid&quot;:&quot;51538.1&quot;,&quot;bestBidSize&quot;:&quot;0.74242495&quot;,&quot;price&quot;:&quot;51538.1&quot;,&quot;sequence&quot;:&quot;10921604960&quot;,&quot;size&quot;:&quot;0.00169029&quot;,&quot;time&quot;:1708924416951},&quot;subject&quot;:&quot;trade.ticker&quot;}
+Received new message {&quot;topic&quot;:&quot;/market/ticker:BTC-USDT&quot;,&quot;type&quot;:&quot;message&quot;,&quot;data&quot;:{&quot;bestAsk&quot;:&quot;51538.2&quot;,&quot;bestAskSize&quot;:&quot;0.76204688&quot;,&quot;bestBid&quot;:&quot;51538.1&quot;,&quot;bestBidSize&quot;:&quot;0.74242495&quot;,&quot;price&quot;:&quot;51538.1&quot;,&quot;sequence&quot;:&quot;10921604962&quot;,&quot;size&quot;:&quot;0.00169029&quot;,&quot;time&quot;:1708924416951},&quot;subject&quot;:&quot;trade.ticker&quot;}
+Received new message {&quot;topic&quot;:&quot;/market/ticker:BTC-USDT&quot;,&quot;type&quot;:&quot;message&quot;,&quot;data&quot;:{&quot;bestAsk&quot;:&quot;51538.2&quot;,&quot;bestAskSize&quot;:&quot;0.76204688&quot;,&quot;bestBid&quot;:&quot;51538.1&quot;,&quot;bestBidSize&quot;:&quot;0.74242495&quot;,&quot;price&quot;:&quot;51538.1&quot;,&quot;sequence&quot;:&quot;10921604965&quot;,&quot;size&quot;:&quot;0.00169029&quot;,&quot;time&quot;:1708924416951},&quot;subject&quot;:&quot;trade.ticker&quot;}
+Received new message {&quot;topic&quot;:&quot;/market/ticker:BTC-USDT&quot;,&quot;type&quot;:&quot;message&quot;,&quot;data&quot;:{&quot;bestAsk&quot;:&quot;51538.2&quot;,&quot;bestAskSize&quot;:&quot;0.76204688&quot;,&quot;bestBid&quot;:&quot;51538.1&quot;,&quot;bestBidSize&quot;:&quot;1.21340739&quot;,&quot;price&quot;:&quot;51538.1&quot;,&quot;sequence&quot;:&quot;10921604972&quot;,&quot;size&quot;:&quot;0.00169029&quot;,&quot;time&quot;:1708924416951},&quot;subject&quot;:&quot;trade.ticker&quot;}
+Received new message {&quot;topic&quot;:&quot;/market/ticker:BTC-USDT&quot;,&quot;type&quot;:&quot;message&quot;,&quot;data&quot;:{&quot;bestAsk&quot;:&quot;51538.2&quot;,&quot;bestAskSize&quot;:&quot;0.76204688&quot;,&quot;bestBid&quot;:&quot;51538.1&quot;,&quot;bestBidSize&quot;:&quot;0.87229173&quot;,&quot;price&quot;:&quot;51538.1&quot;,&quot;sequence&quot;:&quot;10921604983&quot;,&quot;size&quot;:&quot;0.00169029&quot;,&quot;time&quot;:1708924416951},&quot;subject&quot;:&quot;trade.ticker&quot;}
+Close socket with code 1006, reason is Time Out
+</pre>
+</span>
+</div>
+<div id="tab3" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.4</a> at 26 февр. 2024 г., 08:14:12</p>
+</div>
+</div>
+</body>
+</html>
